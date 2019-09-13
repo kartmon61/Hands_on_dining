@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <!--영화 제목, 연령 표시 부분-->
+    <TextView
+        android:id="@+id/textView_shopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/main_dining_name"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <!--구분선-->
+    <View
+        android:id="@+id/divideView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?attr/colorButtonNormal" />
+
+    <!--평점, 내용 입력 부분-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RatingBar
+            android:id="@+id/ratingBar_commentWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:numStars="5"
+            android:paddingTop="3dp"
+            android:stepSize="0.1"
+            />
+
+        <TextView
+            android:id="@+id/textView_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar_commentWrite"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:text="평점을 입력해 주세요"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editText_write"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView_show"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="100"
+            android:hint="100자 이내로 작성해주세요."
+            android:inputType="textPersonName"
+            android:maxLength="100"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <!--저장, 취소 버튼 부분-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_shopWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity_comment_write">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="205dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="281dp"
+            android:text="저장"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="281dp"
+            android:text="취소"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_save"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

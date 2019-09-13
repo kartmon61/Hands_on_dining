@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_reserve_dinner"
+            android:icon="@drawable/reserve_dinner"
+            android:title="@string/menu_reserve_shop" />
+        <item
+            android:id="@+id/nav_shopping_cart"
+            android:icon="@drawable/shoppingcart"
+            android:title="@string/menu_shopping_cart" />
+        <item
+            android:id="@+id/nav_coupon"
+            android:icon="@drawable/coupon"
+            android:title="@string/menu_coupon" />
+        <item
+            android:id="@+id/nav_shopping_list"
+            android:icon="@drawable/shopping_list"
+            android:title="@string/menu_my_shopping" />
+        <item
+            android:id="@+id/nav_review"
+            android:icon="@drawable/my_review"
+            android:title="@string/menu_my_review" />
+    </group>
+
+    <item android:title="관리">
+        <menu>
+            <item
+                android:id="@+id/nav_announcement"
+                android:icon="@drawable/speaker"
+                android:title="@string/menu_announcement" />
+
+            <item
+                android:id="@+id/nav_event"
+                android:icon="@drawable/event"
+                android:title="@string/menu_event" />
+            <item
+                android:id="@+id/nav_config"
+                android:icon="@drawable/config"
+                android:title="@string/menu_config" />
+
+
+        </menu>
+    </item>
+
+</menu>

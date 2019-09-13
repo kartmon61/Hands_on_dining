@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/textView_listDining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="내 주위 가게 리스트"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/divideView5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/colorButtonNormal" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_diningList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dining" />
+
+        <TextView
+            android:id="@+id/textView_diningName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_diningList1"
+            android:paddingLeft="5dp"
+            android:text="@string/main_dining_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_diningName1"
+            android:layout_toRightOf="@+id/imageView_diningList1"
+            android:paddingTop="5dp"
+            android:text="여러 종류의 치킨을 먹을수 있는 곳입니다." />
+
+        <Button
+            android:id="@+id/button_dining1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_ins"
+            android:layout_toRightOf="@+id/imageView_diningList1"
+            android:paddingLeft="5dp"
+            android:text="자세히 보기" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_diningList2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dining" />
+
+        <TextView
+            android:id="@+id/textView_diningName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_diningList2"
+            android:paddingLeft="5dp"
+            android:text="@string/main_dining_name2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_ins2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_diningName2"
+            android:layout_toRightOf="@+id/imageView_diningList2"
+            android:paddingTop="5dp"
+            android:text="여러 종류의 햄버거를 먹을수 있는 곳입니다." />
+
+        <Button
+            android:id="@+id/button_dining2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_ins2"
+            android:layout_toRightOf="@+id/imageView_diningList2"
+            android:enabled="false"
+            android:paddingLeft="5dp"
+            android:text="자세히 보기" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_diningList3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dining" />
+
+        <TextView
+            android:id="@+id/textView_diningName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_diningList3"
+            android:paddingLeft="5dp"
+            android:text="@string/main_dining_name3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_ins3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_diningName3"
+            android:layout_toRightOf="@+id/imageView_diningList3"
+            android:paddingTop="5dp"
+            android:text="여러 종류의 라면을 먹을수 있는 곳입니다." />
+
+        <Button
+            android:id="@+id/button_dining3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_ins3"
+            android:layout_toRightOf="@+id/imageView_diningList3"
+            android:enabled="false"
+            android:paddingLeft="5dp"
+            android:text="자세히 보기" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
